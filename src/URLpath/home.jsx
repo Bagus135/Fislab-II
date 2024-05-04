@@ -286,34 +286,34 @@ function Contents(){
  
     return (
         <div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <Wave1/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <Wave2/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <Wave3/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <Wave4/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <Wave5/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics1/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics2/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics3/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics4/>
             </div>
-            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics5/>
             </div>
         </div>
