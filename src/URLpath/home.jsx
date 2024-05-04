@@ -7,11 +7,10 @@ import { NavLink } from "react-router-dom";
 function HandleButton(){
     function Output({linkData , linkSC}){
         return(
-            <>
-            <button> <NavLink to={linkData}>Data Visualization </NavLink></button>
-            <br/>
-            <button><a href={linkSC}>Source Code</a></button>
-            </>
+            <div className="grid " >
+            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink to={linkData}>Data Visualization </NavLink></button>
+            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a href={linkSC}>Source Code</a></button>
+            </div>
         )
     };
 
@@ -49,8 +48,8 @@ function Contents(){
 
     const Button = ({handleButton, Title}) => {
         return (
-        <div>
-            <button type="button" onClick={handleButton}>{Title}</button>
+        <div className=" text-center content-center h-10 px-6 font-semibold rounded-md text-gray-300 m-3 bg-gray-500 hover:bg-gray-800 hover:text-gray-400">
+            <button className="h-full w-full" type="button" onClick={handleButton}>{Title}</button>
         </div>
         )
     }
@@ -95,7 +94,7 @@ function Contents(){
         }
         return(
             <div>
-                {<Button handleButton={handleButtonW2} Title={"Wave 2"}/>}
+                <Button handleButton={handleButtonW2} Title={"Wave 2"}/>
                 {Menu.W2}
             </div>
         )
@@ -287,29 +286,49 @@ function Contents(){
  
     return (
         <div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <Wave1/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <Wave2/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <Wave3/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <Wave4/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <Wave5/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <ModernPhysics1/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <ModernPhysics2/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <ModernPhysics3/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <ModernPhysics4/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-24 mt-3 ">
             <ModernPhysics5/>
+            </div>
         </div>
     )
 }
 
 function Home(){
     return(
-    <div className="main">
-        <div className="flex justify-center content-center items-center">
-            <h1>FISLAB II</h1>
-            <p>Waves and Modern Physics</p>
+    <div className="tracking-wide font-roboto min-h-screen grid content-start dark box-border bg-gray-900">
+        <div className="grid">
+            <h1 className="text-center text-50 text-5xl mt-5 text-slate-300">FISLAB II</h1>
+            <h2 className="text-center text-gray-300 text-xl">Waves and Modern Physics</h2>
         </div>
-        <div className="content">
-        <h3>Content</h3>
+        <div className="flex flex-col justify-center m-2 pb-10">
+        <h3 className="text-center text-gray-300 text-xl mt-9">Content</h3>
         <Contents/>
         </div>
     </div>
