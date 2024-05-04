@@ -16,9 +16,9 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/waves-1' element={<W1/>}/>
-        <Route path='/waves-2' element={<W2/>}/>
-        <Route path='/waves-5' element={<W5/>}/>
+        <Route path='/wave-1' element={<W1/>}/>
+        <Route path='/wave-2' element={<W2/>}/>
+        <Route path='/wave-5' element={<W5/>}/>
         <Route path='/modern-physics-1' element={<MP1/>}/>
         <Route path='/modern-physics-2' element={<MP2/>}/>
         <Route path='/modern-physics-5' element={<MP5/>}/>
