@@ -7,19 +7,19 @@ const DataKisiMentah = {
             warna : ['Merah', 'Kuning', 'Biru', 'Nila','Ungu'],
             x : [[85,6],[72,8],[61,7],[55,6], [51,5]],
             referensi_1cm:[163,2], 
-            d : (2/100)/1000,
+            d : (1/100)/1000,
         },
         kisi300mm :{
             warna : ['Merah', 'Kuning', 'Biru', 'Nila','Ungu'],
             x : [[615,23],[539,20],[456,21],[411,25],[406,20]],
             referensi_1cm: [264,4],
-            d : (2/300)/1000
+            d : (1/300)/1000
         },
         kisi600mm :{
             warna : ['Merah', 'Kuning', 'Biru', 'Nila','Ungu'],
             x : [[1238,31],[1088,31],[923,20],[872,13],[829,12]],
             referensi_1cm: [280,12],
-            d : (2/600)/1000
+            d : (1/600)/1000
         },
     },
     neon:{
@@ -27,19 +27,19 @@ const DataKisiMentah = {
             warna:['Merah', 'Jingga', 'Kuning', 'Hijau', 'Biru'],
             referensi_1cm: [232,6],
             x : [[220,12], [195,9], [171,8], [163,7], [149,6]],
-            d : (2/100)/1000
+            d : (1/100)/1000
         },
         kisi300mm :{
             warna:['Merah', 'Jingga', 'Kuning', 'Hijau', 'Biru'],
             referensi_1cm: [267,4],
             x : [[652,23],[622,17],[585,16],[532,9],[492,6]],
-            d : (2/300)/1000
+            d : (1/300)/1000
         },
         kisi600mm :{
             warna:['Merah', 'Jingga', 'Kuning', 'Hijau', 'Biru'],
             referensi_1cm: [222,2],
             x : [[1147,44],[1101,40],[1072,37],[978,32],[861,33]],
-            d : (2/600)/1000
+            d : (1/600)/1000
         },
     },
     hidrogen:{
@@ -47,19 +47,19 @@ const DataKisiMentah = {
             warna:['Merah', 'Biru'],
             referensi_1cm: [0,0],
             x : [[0,0],[0,0]],
-            d : (2/100)/1000
+            d : (1/100)/1000
         },
         kisi300mm :{
             warna:['Merah', 'Biru'],
             referensi_1cm: [215,1],
             x : [[700,121],[629,99]],
-            d : (2/300)/1000
+            d : (1/300)/1000
         },
         kisi600mm :{
             warna:['Merah', 'Biru'],
             referensi_1cm: [211,2],
             x : [[1277,49],[929,23]],
-            d : (2/600)/1000
+            d : (1/600)/1000
         },
     },
 }
