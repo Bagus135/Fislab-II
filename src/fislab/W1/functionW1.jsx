@@ -72,7 +72,7 @@ function lambdaFinal(Kisi100mm, Kisi300mm, Kisi600mm){
 
 
 function widthFormula(x,n){
-    const lambda = 932*10**-9 ;// 932 nm
+    const lambda = 532*10**-9 ;// 932 nm
     const l = 6.735;
     const diameter = lambda*l*n/x;
     return diameter;
