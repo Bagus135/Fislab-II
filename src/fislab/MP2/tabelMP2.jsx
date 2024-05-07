@@ -1,5 +1,5 @@
 import { Tabel } from "../../component/table";
-import {fluxData} from "./dataMP2";
+import {MuonFlux} from "./dataMP2";
 
 function Layout(title, height){
   let layout = {
@@ -18,7 +18,7 @@ function Layout(title, height){
 function TabelFlux(){
     return (
        <div className='TabelFlux'>
-        <Tabel layout={Layout('Data Muon Flux',300)} header={['Pengulangan', 'Lantai 1', 'Lantai 2','Lantai 3', 'Lantai 4' ]} data={[fluxData.pengulangan, fluxData.lt1, fluxData.lt2, fluxData.lt3, fluxData.lt4]} />
+        <Tabel layout={Layout('Data Muon Flux',300)} header={['Pengulangan', 'Lantai 1', 'Lantai 2','Lantai 3', 'Lantai 4' ]} data={[MuonFlux.pengulangan, MuonFlux.lt1, MuonFlux.lt2, MuonFlux.lt3, MuonFlux.lt4]} />
        </div>
      )
 }

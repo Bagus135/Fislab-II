@@ -198,7 +198,7 @@ function Contents(){
             if(stateBtn.state7 === true){
               setMenu({
                 ...Menu,
-                MP2 : <OutputState linkData={'modern-physics-1'} linkSC={'https://google.com'}/>
+                MP2 : <OutputState linkData={'modern-physics-2'} linkSC={'https://google.com'}/>
               })
             } else {
                 setMenu({
