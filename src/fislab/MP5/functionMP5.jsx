@@ -51,6 +51,7 @@ function lambdaMP5(panjangArray, gratingConstant){
         lambda = lambda*10**9; // rubah ke nm
         lambda = parseFloat(lambda.toFixed(3)) // bulatkan 3 angka di belakang koma
         lambdaArray.push(lambda);
+        
     }
     return {lambdaArray, xArray}
 }

@@ -1,3 +1,4 @@
+import GrafikMP5 from "./grafikMP5";
 import { TabelPengkuran, TabelSpectrometer } from "./tabelMP5";
 
 function MP5(){
@@ -5,6 +6,7 @@ function MP5(){
       <div className="MP5">
         <TabelPengkuran/>
         <TabelSpectrometer/>
+        <GrafikMP5/>
       </div>
     )
   }

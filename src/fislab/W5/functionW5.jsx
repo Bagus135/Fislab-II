@@ -96,8 +96,8 @@ export function Execution(referensi_x, referensi_y, diameter_x, diameter_y){
 
 
 export function Graphing({variasi, dataObjek, plotRegresi}){
-  const grafikData = datasets('Udara','scatter',dataObjek.x,dataObjek.DataGrafik,'blue','blue')
-  const grafikRegresi = datasets('Regresi Udara','line',dataObjek.x, plotRegresi.y,'red','red')
+  const grafikData = datasets('Pengukuran','scatter',dataObjek.x,dataObjek.DataGrafik,'blue','blue')
+  const grafikRegresi = datasets('Garis Regresi ','line',dataObjek.x, plotRegresi.y,'red','red')
   
 
   const PlotGrafik = <PlotGraph title={variasi} titleX={"Orde"} titleY={'Diameter Kuadrat .10^-6 (meter^2)'} datasets={[grafikData,grafikRegresi]}/>

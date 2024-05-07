@@ -6,7 +6,7 @@ import { MathJax } from "better-react-mathjax"
 function GrafikW5(){
     function GrafikUdara1(){
       return(
-        <div className='GrafikUdara1'>
+        <div className='w-6/12 h-full'>
         <Graphing variasi={'Udara 1'} dataObjek={Udara1.dataObjek} plotRegresi={Udara1.plotRegresi}/>
         <p> Persamaan Regresi : y ={(Udara1.regresiLinear.m*10**7).toFixed(2)}x{'\\(10^{-7}x\\)'} + {(Udara1.regresiLinear.b*10**7).toFixed(2)}x{'\\(10^{-7}\\)'} </p>
         <hr/>
@@ -15,7 +15,7 @@ function GrafikW5(){
     }
     function GrafikUdara2(){
       return(
-        <div className='GrafikUdara2'>
+        <div className='w-6/12 h-full'>
         <Graphing variasi={'Udara 2'} dataObjek={Udara2.dataObjek} plotRegresi={Udara2.plotRegresi}/>
         <p> Persamaan Regresi : y ={(Udara2.regresiLinear.m*10**7).toFixed(2)}x{'\\(10^{-7}x\\)'} + {(Udara2.regresiLinear.b*10**7).toFixed(2)}x{'\\(10^{-7}\\)'} </p>
         <hr/>
@@ -24,7 +24,7 @@ function GrafikW5(){
     }
     function GrafikUdara3(){
       return(
-        <div className='GrafikUdara3'>
+        <div className='w-6/12 h-full'>
         <Graphing variasi={'Udara 3'} dataObjek={Udara3.dataObjek} plotRegresi={Udara3.plotRegresi}/>
         <p> Persamaan Regresi : y ={(Udara3.regresiLinear.m*10**7).toFixed(2)}x{'\\(10^{-7}x\\)'} + {(Udara3.regresiLinear.b*10**7).toFixed(2)}x{'\\(10^{-7}\\)'} </p>
         <hr/>
@@ -33,7 +33,7 @@ function GrafikW5(){
     }
     function GrafikAir(){
       return(
-        <div className='GrafikAir'>
+        <div className='w-6/12 h-full'>
         <Graphing variasi={'Air'} dataObjek={Air.dataObjek} plotRegresi={Air.plotRegresi}/>
         <p> Persamaan Regresi : y ={(Air.regresiLinear.m*10**7).toFixed(2)}x{'\\(10^{-7}x\\)'} + {(Air.regresiLinear.b*10**7).toFixed(2)}x{'\\(10^{-7}\\)'} </p>
         <hr/>
@@ -42,7 +42,7 @@ function GrafikW5(){
     }
     function GrafikLarutanGula(){
       return(
-        <div className='GrafikLarutanGula'>
+        <div className='w-6/12 h-full'>
         <Graphing variasi={'Larutan Gula'} dataObjek={LarutanGula.dataObjek} plotRegresi={LarutanGula.plotRegresi}/>
         <p> Persamaan Regresi : y ={(LarutanGula.regresiLinear.m*10**7).toFixed(2)}x{'\\(10^{-7}x\\)'} + {(LarutanGula.regresiLinear.b*10**7).toFixed(2)}x{'\\(10^{-7}\\)'} </p>
           <hr/>
