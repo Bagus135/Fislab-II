@@ -8,8 +8,8 @@ function HandleButton(){
     function Output({linkData , linkSC}){
         return(
             <div className="grid " >
-            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink to={linkData}>Data Visualization </NavLink></button>
-            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a href={linkSC}>Source Code</a></button>
+            <button className="h-full w-full my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink to={linkData}>Data Visualization </NavLink></button>
+            <button className="h-full w-full my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a href={linkSC}>Source Code</a></button>
             </div>
         )
     };
@@ -60,7 +60,7 @@ function Contents(){
             if(stateBtn.state1 === true){
                 setMenu({
                     ...Menu,
-                    W1 : <OutputState linkData={'wave-1'} linkSC={'https://google.com'}/>
+                    W1 : <OutputState linkData={'wave-1'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/W1'}/>
                 })
             } else {
                 setMenu({
