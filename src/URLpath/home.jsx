@@ -8,8 +8,8 @@ function HandleButton(){
     function Output({linkData , linkSC}){
         return(
             <div className="grid " >
-            <button className="h-full w-full my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink className={'h-full w-full'} to={linkData}>Data Visualization </NavLink></button>
-            <button className="h-full w-full my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a className="h-full w-full" href={linkSC}>Source Code</a></button>
+            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink to={linkData}>Data Visualization </NavLink></button>
+            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a href={linkSC}>Source Code</a></button>
             </div>
         )
     };

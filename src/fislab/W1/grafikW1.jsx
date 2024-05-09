@@ -40,7 +40,7 @@ const DataRegresi = plotRegresi(DataPlot)
 
 function GrafikSnell(){
     const grafikData = datasets('Data Pengukuran','scatter',DataPlot.sinus2,DataPlot.sinus1,'blue','blue')
-    const grafikRegresi = datasets('Plot Regresi Linear (y = 1,621x + 0,027)','line',DataRegresi.x,DataRegresi.y,'red','red')
+    const grafikRegresi = datasets('Plot Regresi Linear [y = 1,621x + 0,027]','line',DataRegresi.x,DataRegresi.y,'red','red')
     const PlotGrafik = <PlotGraph title='Grafik Hukum Snellius' titleX={`Sin${decodeURI('%CE%B8')}2`} titleY={`Sin${decodeURI('%CE%B8')}1`} datasets={[grafikData, grafikRegresi]}/>
     return  PlotGrafik
   }

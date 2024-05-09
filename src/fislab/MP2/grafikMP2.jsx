@@ -23,7 +23,7 @@ const dataRegresi = RegresiLinear(MuonFlux)
 
 function GrafikFlux(){
     const grafikData = datasets('Data Pengukuran','scatter',MuonFlux.tinggi_lt,MuonFlux.mean,'red','red');
-    const grafikRegresi = datasets(`Garis Regresi [y = ${dataRegresi.Regresi.m} x + ${dataRegresi.Regresi.b}]`, 'line',dataRegresi.x, dataRegresi.y , 'blue', 'blue');
+    const grafikRegresi = datasets(`Garis Regresi [y = ${dataRegresi.Regresi.m.toFixed(5)} x + ${dataRegresi.Regresi.b}]`, 'line',dataRegresi.x, dataRegresi.y , 'blue', 'blue');
     const PlotGrafik = <PlotGraph title='Grafik Flux Muon terhadap Ketinggian' titleX={'Ketinggian (m)'} titleY={'Muon Flux (cps)'} datasets={[grafikData, grafikRegresi]}/>
     return  PlotGrafik
   }

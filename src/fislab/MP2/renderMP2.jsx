@@ -9,7 +9,9 @@ function MP2(){
             <Opening/>
             <TabelFlux/>
             <MuonScript/>
+            <div className="h-full w-5/12">
             <GrafikFlux/>
+            </div>
             <FizeauFocaultScript/>
         </div>
     )
