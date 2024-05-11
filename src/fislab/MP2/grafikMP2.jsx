@@ -23,7 +23,6 @@ function RegresiLinear(data){
 const dataRegresi = RegresiLinear(MuonFlux)
 
 function GrafikFlux(){
-  console.log(Deviasi)
     const grafikData = datasets('Data Pengukuran','scatter',MuonFlux.tinggi_lt,MuonFlux.mean,'red','red');
     const grafikRegresi = datasets(`Garis Regresi [y = ${dataRegresi.Regresi.m.toFixed(5)} x + ${dataRegresi.Regresi.b}]`, 'line',dataRegresi.x, dataRegresi.y , 'blue', 'blue');
     const ErrorBar = errorBar('y','Error Bar', MuonFlux.tinggi_lt,MuonFlux.mean,Deviasi)
