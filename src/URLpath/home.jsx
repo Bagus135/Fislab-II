@@ -7,9 +7,16 @@ import { NavLink } from "react-router-dom";
 function HandleButton(){
     function Output({linkData , linkSC}){
         return(
-            <div className="grid " >
-            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300 " > <NavLink to={linkData}>Data Visualization </NavLink></button>
-            <button className="my-2 mx-4 p-1 rounded-sm hover:bg-gray-800 hover:text-gray-300"><a href={linkSC}>Source Code</a></button>
+            <div className="grid mx-4" >
+                <NavLink to={linkData}>
+                <button className="my-2 p-1 rounded-sm hover:bg-gray-800 w-full hover:text-gray-300 " > 
+                 Data Visualization </button>
+                </NavLink>
+                <a href={linkSC}>
+            <button className="my-2 p-1 rounded-sm hover:bg-gray-800 w-[97.5%] hover:text-gray-300">
+            Source Code
+                </button>
+                </a>
             </div>
         )
     };
@@ -83,7 +90,7 @@ function Contents(){
             if(stateBtn.state2 === true){
               setMenu({
                 ...Menu,
-                W2 : <OutputState linkData={'wave-2'} linkSC={'https://google.com'}/>
+                W2 : <OutputState linkData={'wave-2'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/W2'}/>
               })
             } else {
                 setMenu({
@@ -106,7 +113,7 @@ function Contents(){
             if(stateBtn.state3 === true){
               setMenu({
                 ...Menu,
-                W3 : <OutputState linkData={'wave-3'} linkSC={'https://google.com'}/>
+                W3 : <OutputState linkData={'wave-3'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/W3'}/>
               })
             } else {
                 setMenu({
@@ -129,7 +136,7 @@ function Contents(){
             if(stateBtn.state4 === true){
               setMenu({
                 ...Menu,
-                W4 : <OutputState linkData={'wave-4'} linkSC={'https://google.com'}/>
+                W4 : <OutputState linkData={'wave-4'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/W4'}/>
               })
             } else {
                 setMenu({
@@ -152,7 +159,7 @@ function Contents(){
             if(stateBtn.state5 === true){
               setMenu({
                 ...Menu,
-                W5 : <OutputState linkData={'wave-5'} linkSC={'https://google.com'}/>
+                W5 : <OutputState linkData={'wave-5'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/W5'}/>
               })
             } else {
                 setMenu({
@@ -175,7 +182,7 @@ function Contents(){
             if(stateBtn.state6 === true){
               setMenu({
                 ...Menu,
-                MP1 : <OutputState linkData={'modern-physics-1'} linkSC={'https://google.com'}/>
+                MP1 : <OutputState linkData={'modern-physics-1'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP1'}/>
               })
             } else {
                 setMenu({
@@ -198,7 +205,7 @@ function Contents(){
             if(stateBtn.state7 === true){
               setMenu({
                 ...Menu,
-                MP2 : <OutputState linkData={'modern-physics-2'} linkSC={'https://google.com'}/>
+                MP2 : <OutputState linkData={'modern-physics-2'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP2'}/>
               })
             } else {
                 setMenu({
@@ -221,7 +228,7 @@ function Contents(){
             if(stateBtn.state8 === true){
               setMenu({
                 ...Menu,
-                MP3 : <OutputState linkData={'modern-physics-3'} linkSC={'https://google.com'}/>
+                MP3 : <OutputState linkData={'modern-physics-3'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP3'}/>
               })
             } else {
                 setMenu({
@@ -244,7 +251,7 @@ function Contents(){
             if(stateBtn.state9 === true){
               setMenu({
                 ...Menu,
-                MP4 : <OutputState linkData={'modern-physics-4'} linkSC={'https://google.com'}/>
+                MP4 : <OutputState linkData={'modern-physics-4'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP4'}/>
               })
             } else {
                 setMenu({
@@ -267,7 +274,7 @@ function Contents(){
             if(stateBtn.state10 === true){
               setMenu({
                 ...Menu,
-                MP5 : <OutputState linkData={'modern-physics-5'} linkSC={'https://google.com'}/>
+                MP5 : <OutputState linkData={'modern-physics-5'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP5'}/>
               })
             } else {
                 setMenu({
