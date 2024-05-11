@@ -47,7 +47,7 @@ function IndeksBiasW5(){
 
 function IndeksBiasScript(){
     return(
-        <div className="biasScript">
+        <div className="w-full">
             <p>Untuk mencari indeks bias pada suatu medium dapat ditentukan dengan membandingkan diameter cincin dengan orde yang sama pada medium udara dengan suatu medium lainnya, dengan menggunakan persamaan</p>
             <MathJax>{"\\(n = \\frac{d^2}{d_l^2}\\)"}</MathJax>
             <MathJax> <p>dengan n adalah nilai indeks biasnya, {"\\(d\\)"} adalah diameter cincin pada udara dan {"\\(d_l\\)"} adalah diameter cincin pada suatu medium lain  </p></MathJax>

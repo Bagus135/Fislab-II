@@ -46,7 +46,7 @@ function LambdaW5(){
 // Menulis MathFormula using MathJax with laTeX format
 function LambdaScript(){
     return(
-        <div className="lambdaScript">
+        <div className="w-full">
             <p> Persamaan pada grafik tersebut memenuhi</p>
             <MathJax>{"\\(d^2 = 4R \\lambda m\\) "}</MathJax>
             <p>Untuk mencari panjang gelombang dari sumber cahaya dapat ditentukan melalui persamaan garisnya yaitu pada nilai gradiennya</p>

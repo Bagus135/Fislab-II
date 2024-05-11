@@ -1,6 +1,7 @@
-import { PlotGraph,datasets } from "../../component/chart"
+import { PlotGraph,datasets,errorBar } from "../../component/chart"
 import {MuonFlux} from "./dataMP2"
 import { linearRegression } from "simple-statistics"
+import Deviasi from "./standarDeviasiMP2"
 
 function RegresiLinear(data){
   // gabungkan data mean dan tinggi lantai menjadi array multidimensional -> [[mean1,tinggi1]]
@@ -22,9 +23,12 @@ function RegresiLinear(data){
 const dataRegresi = RegresiLinear(MuonFlux)
 
 function GrafikFlux(){
+  console.log(Deviasi)
     const grafikData = datasets('Data Pengukuran','scatter',MuonFlux.tinggi_lt,MuonFlux.mean,'red','red');
     const grafikRegresi = datasets(`Garis Regresi [y = ${dataRegresi.Regresi.m.toFixed(5)} x + ${dataRegresi.Regresi.b}]`, 'line',dataRegresi.x, dataRegresi.y , 'blue', 'blue');
-    const PlotGrafik = <PlotGraph title='Grafik Flux Muon terhadap Ketinggian' titleX={'Ketinggian (m)'} titleY={'Muon Flux (cps)'} datasets={[grafikData, grafikRegresi]}/>
+    const ErrorBar = errorBar('y','Error Bar', MuonFlux.tinggi_lt,MuonFlux.mean,Deviasi)
+   
+    const PlotGrafik = <PlotGraph title='Grafik Flux Muon terhadap Ketinggian' titleX={'Ketinggian (m)'} titleY={'Muon Flux (cps)'} datasets={[grafikData, grafikRegresi, ErrorBar]}/>
     return  PlotGrafik
   }
   

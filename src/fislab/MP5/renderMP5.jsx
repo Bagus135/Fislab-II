@@ -3,7 +3,9 @@ import { TabelPengkuran, TabelSpectrometer } from "./tabelMP5";
 
 function MP5(){
     return(
-      <div className="MP5">
+      <div className="m-6 flex flex-col justify-center self-center items-center">
+        <h1 className="font-bold text-3xl text-center"> SPECTROMETRI GAS</h1>
+        <br/> <br/>
         <TabelPengkuran/>
         <TabelSpectrometer/>
         <GrafikMP5/>

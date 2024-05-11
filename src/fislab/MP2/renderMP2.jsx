@@ -4,14 +4,12 @@ import { MuonScript,Opening,FizeauFocaultScript, Header} from "./naskahMP2";
 
 function MP2(){
     return(
-        <div className="MP2">
+        <div className="m-6 flex flex-col justify-center self-center items-center">
             <Header/>
             <Opening/>
             <TabelFlux/>
             <MuonScript/>
-            <div className="h-full w-5/12">
             <GrafikFlux/>
-            </div>
             <FizeauFocaultScript/>
         </div>
     )

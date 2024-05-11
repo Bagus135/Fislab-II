@@ -322,15 +322,17 @@ function Contents(){
 
 function Home(){
     return(
-    <div className="tracking-wide font-roboto min-h-screen grid content-start dark box-border bg-gray-900">
+    <div className="tracking-wide font-roboto min-h-screen grid content-start dark box-border bg-gray-900 scrollbar-hide">
         <div className="grid">
-            <h1 className="text-center text-50 text-5xl mt-5 text-slate-300">FISLAB II</h1>
-            <h2 className="text-center text-gray-300 text-xl">Waves and Modern Physics</h2>
+            <h1 className="text-center text-50 text-5xl mt-5 font-bold text-slate-300">FISLAB II</h1>
+            <h2 className="text-center text-gray-300 text-xl">WAVE AND MODERN PHYSICS</h2>
+            <h3 className="text-center text-gray-300 font-mono italic text-xl">"2 SKS yang setara dengan Tugas Akhir"</h3>
         </div>
         <div className="flex flex-col justify-center m-2 pb-10">
-        <h3 className="text-center text-gray-300 text-xl mt-9">Content</h3>
+        <h3 className="text-center text-gray-300 text-xl mt-10">Content</h3>
         <Contents/>
         </div>
+        <h2 className="text-center flex justify-center self-center items-center  text-gray-300 text-xl mb-5">Created by<h3 className="text-gray-500 font-bold ml-2"> Bagus Mustaqim</h3></h2>
     </div>
     )
 }

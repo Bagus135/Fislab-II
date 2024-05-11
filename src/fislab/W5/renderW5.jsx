@@ -5,8 +5,9 @@ import { IndeksBiasScript } from "./indeksBiasW5";
 
 function W5(){
     return(
-      <>
-      <p>Bagus Mustaqim/5001221060/14</p>
+      < div className=" m-6 flex flex-col justify-center self-center items-center">
+        <h1 className="font-bold text-3xl text-center">NEWTON RINGS</h1>
+        <br/> <br/>
       <TabelPengukuran/>
       <br/>
       <br/>
@@ -15,7 +16,7 @@ function W5(){
       <TabelLambda/>
       <IndeksBiasScript/>
       <TabelIndeksBias/>
-      </>
+      </div>
     )
   }
   

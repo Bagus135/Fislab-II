@@ -22,7 +22,8 @@ function TabelPengukuran(){
        return (
          <div className='TabelUdara1'>
           <Tabel layout={Layout('Udara 1',270)} header={['Orde', 'diameter_x (px)', 'diameter_y (px)', 'diameter_asli (mm)']} data={[Udara1.dataObjek.x, DataUdara1.diameter_x, DataUdara1.diameter_y, Udara1.dataObjek.DataTabel] }/>
-          <p> Referensi 1 mm = {Udara1.referensi_1mm}px</p>
+          <p className="text-center"> Referensi 1 mm = {Udara1.referensi_1mm}px</p>
+          <br/>
          </div>
        )
      }
@@ -30,7 +31,8 @@ function TabelPengukuran(){
        return (
          <div className='TabelUdara2'>
           <Tabel layout={Layout('Udara 2',270)} header={['Orde', 'diameter_x (px)', 'diameter_y (px)', 'diameter_asli (mm)']} data={[Udara2.dataObjek.x, DataUdara2.diameter_x, DataUdara2.diameter_y, Udara2.dataObjek.DataTabel] }/>
-           <p> Referensi 1 mm = {Udara2.referensi_1mm}px</p>
+           <p className="text-center"> Referensi 1 mm = {Udara2.referensi_1mm}px</p>
+           <br/>
          </div>
        )
      }
@@ -38,7 +40,8 @@ function TabelPengukuran(){
        return (
          <div className='TabelUdara3'>
            <Tabel layout={Layout('Udara 3',270)} header={['Orde', 'diameter_x (px)', 'diameter_y (px)', 'diameter_asli (mm)']} data={[Udara3.dataObjek.x, DataUdara3.diameter_x, DataUdara3.diameter_y, Udara3.dataObjek.DataTabel] }/>
-           <p> Referensi 1 mm = {Udara3.referensi_1mm}px</p>
+           <p className="text-center"> Referensi 1 mm = {Udara3.referensi_1mm}px</p>
+           <br/>
          </div>
        )
      }
@@ -46,7 +49,8 @@ function TabelPengukuran(){
        return (
          <div className='TabelAir'>
           <Tabel layout={Layout('Air',270)} header={['Orde', 'diameter_x (px)', 'diameter_y (px)', 'diameter_asli (mm)']} data={[Air.dataObjek.x, DataAir.diameter_x, DataAir.diameter_y, Air.dataObjek.DataTabel] }/>
-          <p> Referensi 1 mm = {Air.referensi_1mm}px</p>
+          <p className="text-center"> Referensi 1 mm = {Air.referensi_1mm}px</p>
+          <br/>
          </div>
        )
      }
@@ -54,12 +58,13 @@ function TabelPengukuran(){
        return (
          <div className='TabelLarutanGula'>
           <Tabel layout={Layout('LarutanGula',270)} header={['Orde', 'diameter_x (px)', 'diameter_y (px)', 'diameter_asli (mm)']} data={[LarutanGula.dataObjek.x, DataLarutanGula.diameter_x, DataLarutanGula.diameter_y, LarutanGula.dataObjek.DataTabel] }/>
-          <p> Referensi 1 mm = {LarutanGula.referensi_1mm}px</p>
+          <p className="text-center"> Referensi 1 mm = {LarutanGula.referensi_1mm}px</p>
+          <br/>
          </div>
        )
      }
      return (
-       <div className='TabelData'>
+       <div className='w-full flex flex-col justify-center self-center items-center'>
        <TabelUdara1/>
        <TabelUdara2/>
        <TabelUdara3/>
@@ -117,8 +122,8 @@ function TabelIndeksBias(){
     )
   }
   return (
-    <div className='TabelIndeksBias'>
-      <h3 style={{textAlign: 'right'}}>Tabel Indeks Bias</h3>
+    <div className='w-full flex flex-col justify-center self-center items-center'>
+      <br/>
     <TabelUdara1/>
     <TabelUdara2/>
     <TabelUdara3/>

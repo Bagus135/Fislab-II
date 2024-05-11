@@ -3,8 +3,8 @@ import GrafikVariasi from "./grafikW2";
 
 function W2(){
     return(
-        <div className="W2">
-        <h1> W2 : Damped Oscillation</h1>
+        <div className="m-6 flex flex-col justify-center self-center items-center">
+        <h1 className="font-bold text-3xl text-center"> DAMPED OSCILATION</h1>
         <br/> <br/>
         <TabelPengukuran/>    
         <TabelData/>

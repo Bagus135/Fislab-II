@@ -3,12 +3,9 @@ import GrafikSnell from "./grafikW1";
 
 function W1(){
     return(
-      <div className="W1">
-      <p>Bagus Mustaqim/5001221060/14</p>
+      <div className="w-full flex flex-col justify-center self-center items-center">
       <TabelIndeksBias/>
-      <div className="h-full w-5/12">
       <GrafikSnell/>
-      </div>
       <TabelLambda/>
       <TabelDiameterSenar/>
       </div>
