@@ -3,7 +3,7 @@ import { MathJax } from "better-react-mathjax";
 
 function Header(){
     return(
-        <h1 className="font-bold text-xl text-center">SPECIAL RELATIVITY AND FIZEAU-FOCAULT EXPERIMENT</h1>
+        <h1 className="font-bold text-2xl text-center">SPECIAL RELATIVITY AND FIZEAU-FOCAULT EXPERIMENT</h1>
     )
 }
 

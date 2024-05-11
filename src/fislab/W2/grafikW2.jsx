@@ -43,7 +43,7 @@ function GrafikVariasi(){
   }
 
   return (
-    <div className='w-full'>
+    <div className='w-screen'>
       <GrafikRegresi1/>
       <br/>
       <GrafikRegresi2/>

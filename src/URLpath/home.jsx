@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 function HandleButton(){
     function Output({linkData , linkSC}){
         return(
-            <div className="grid mx-4" >
+            <div className="grid mx-4 text-center" >
                 <NavLink to={linkData}>
                 <button className="my-2 p-1 rounded-sm hover:bg-gray-800 w-full hover:text-gray-300 " > 
                  Data Visualization </button>
