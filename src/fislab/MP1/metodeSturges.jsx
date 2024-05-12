@@ -15,15 +15,17 @@ function MetodeSturges(Data){
     const bigClass = [] // => [[kelas 1], [kelas 2], [kelas 3], dst]
 
     let index = 0
-    console.log(h)
+
 
     let h_loop = h + Data[0]
+    const rangeClass = []
     
     for(let i = 1; i < nClass; i++ ){
         let Class = [];
 
         while (true) {
             if(Data[index] >= h_loop  ){
+                rangeClass.push(`${(h_loop - h).toFixed(3)} ~ ${h_loop.toFixed(3)}`)
                 h_loop = h_loop + h
                 bigClass.push(Class)
                 break
@@ -37,7 +39,8 @@ function MetodeSturges(Data){
    let Class = []
    for(index; index < Data.length; index++){
         Class.push(Data[index])
-   } 
+   }
+   rangeClass.push(`${(h_loop - h).toFixed(3)} ~ ${h_loop.toFixed(3)}`)
    bigClass.push(Class)
 
     // Cek jumlah data per kelas
@@ -47,7 +50,7 @@ function MetodeSturges(Data){
         classFrec.push(Frec)
     }
 
-    return {bigClass, classFrec}
+    return {bigClass, classFrec, rangeClass}
 }
 
 export default MetodeSturges

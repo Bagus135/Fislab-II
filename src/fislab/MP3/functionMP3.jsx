@@ -3,7 +3,7 @@ function frecuencyFormula(x) {
     const l = 0.3; const n = 1; const d= 1/300/1000  // meter
     const lambda = d*x/(n*(l**2 + x**2)**0.5)
     const  frec = 3*(10**8)/ lambda
-    return frec  
+    return {frec , lambda}  
 }
 
 function stopVolt(data){

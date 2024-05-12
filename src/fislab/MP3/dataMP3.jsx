@@ -29,11 +29,17 @@ const dataBiru = {
 }
 
 // Data Pengolahan
+const dataLambda = {
+    'Merah' : frecuencyFormula(dataMerah.x).lambda,
+    'Kuning' : frecuencyFormula(dataKuning.x).lambda,
+    'Hijau' : frecuencyFormula(dataHijau.x).lambda,
+    'Biru' : frecuencyFormula(dataBiru.x).lambda,
+};
 const dataFrekuensi = {
-    'Merah' : frecuencyFormula(dataMerah.x),
-    'Kuning' : frecuencyFormula(dataKuning.x),
-    'Hijau' : frecuencyFormula(dataHijau.x),
-    'Biru' : frecuencyFormula(dataBiru.x),
+    'Merah' : frecuencyFormula(dataMerah.x).frec,
+    'Kuning' : frecuencyFormula(dataKuning.x).frec,
+    'Hijau' : frecuencyFormula(dataHijau.x).frec,
+    'Biru' : frecuencyFormula(dataBiru.x).frec,
 };
 
 const dataStopVolt = {
@@ -62,4 +68,4 @@ const dataEnergy = {
     'Biru' : energyMax(dataStopVolt.Biru.mean),
 }
 
-export {dataMerah, dataKuning, dataHijau, dataBiru, dataFrekuensi,dataStopVolt,dataEnergy}
+export {dataMerah, dataKuning, dataHijau, dataBiru, dataFrekuensi,dataStopVolt,dataEnergy, dataLambda}

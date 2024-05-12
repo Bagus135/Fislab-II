@@ -67,7 +67,6 @@ let xMin = 0; let xMax = 0;
     responsive: true,
     scales: {
       x: {
-        type:'linear',
         title: {
           display: true,
           text: titleX

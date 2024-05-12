@@ -3,7 +3,6 @@ import { dataEnergy, dataStopVolt, dataFrekuensi } from "./dataMP3";
 
 const dataRegresi = [[dataFrekuensi.Merah,dataEnergy.Merah],[dataFrekuensi.Kuning,dataEnergy.Kuning], [dataFrekuensi.Hijau, dataEnergy.Hijau],[dataFrekuensi.Biru,dataEnergy.Biru]]
 
-console.log(dataRegresi)
 const Regresi = linearRegression(dataRegresi);
 
 const Gradient = Regresi.m;

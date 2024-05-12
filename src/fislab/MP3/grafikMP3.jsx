@@ -7,7 +7,6 @@ const dataY = [dataStopVolt.Merah.mean, dataStopVolt.Kuning.mean,dataStopVolt.Hi
 const dataDeviasi = [dataStopVolt.Merah.std,dataStopVolt.Kuning.std,dataStopVolt.Hijau.std, dataStopVolt.Biru.std];
 
 function GrafikLED(){
-  console.log({dataRegresiX, dataRegresiY})
     const grafikData = datasets('Data Pengukuran','scatter',dataX, dataY, 'red','red');
     const grafikRegresi = datasets(`Garis Regresi [y = ${(Gradient*10**34).toFixed(5)}*10^-34x ${(Interceps*10**20).toFixed(5)}*10^-20]`, 'line',dataRegresiX, dataRegresiY , 'blue', 'blue');
     const ErrorBar = errorBar('y','Error Bar',dataX, dataY,dataDeviasi)
