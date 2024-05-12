@@ -27,7 +27,7 @@ function Layout(title, height){
    }
 
    function TabelPerhitunganQ(){
-    console.log(DataMerge)  
+
     return (
           <Tabel layout={Layout('Data Perhitungan',500)} header={['Pengulangan', 'q-Floating (10^-19 C)', 'q-FallRaise (10^-19 C)l' ]} data={[qMinyak.dataFloating.pengulangan,qMinyak.dataFloating.oilCharge, qMinyak.dataFallRaise]} />
        )

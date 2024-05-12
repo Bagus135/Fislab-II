@@ -62,11 +62,12 @@ let xMin = 0; let xMax = 0;
   return datasetsObj
 }; 
 
- function PlotGraph({title, titleX, titleY, datasets}) {
+ function PlotGraph({title, titleX, titleY, datasets, type}) {
   const options = {
     responsive: true,
     scales: {
       x: {
+        type : 'linear',
         title: {
           display: true,
           text: titleX
