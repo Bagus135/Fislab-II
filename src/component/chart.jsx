@@ -63,6 +63,7 @@ let xMin = 0; let xMax = 0;
 }; 
 
  function PlotGraph({title, titleX, titleY, datasets, type}) {
+
   const options = {
     responsive: true,
     scales: {
@@ -91,6 +92,10 @@ let xMin = 0; let xMax = 0;
       },
     },
   }
+
+if (type==='none'){
+  delete options.scales.x.type
+}
 
   const data = {
    datasets
