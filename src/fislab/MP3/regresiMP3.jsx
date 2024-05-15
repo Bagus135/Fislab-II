@@ -8,7 +8,7 @@ const Regresi = linearRegression(dataRegresi);
 const Gradient = Regresi.m;
 const Interceps = Regresi.b;
 
-const dataRegresiX = [(dataFrekuensi.Merah-15000000000000), (dataFrekuensi.Biru + 10000000000000)]
-const dataRegresiY = [(Gradient*dataRegresiX[0]+ Interceps)/1.6*(10**19), (Gradient*dataRegresiX[1] +Interceps)/1.6*(10**19)]
+const dataRegresiX = [(dataFrekuensi.Merah-15000000000000)/10**12, (dataFrekuensi.Biru + 10000000000000)/10**12]
+const dataRegresiY = [(Gradient*dataRegresiX[0]*10**12 + Interceps)/1.6*(10**19), (Gradient*dataRegresiX[1]*10**12 +Interceps)/1.6*(10**19)]
 
 export{Gradient,Interceps, dataRegresiX, dataRegresiY}

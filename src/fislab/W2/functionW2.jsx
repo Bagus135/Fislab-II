@@ -68,7 +68,6 @@ return {wavePlot, regPlot}
 function Execution(dataVariasi){
     const data = Data(dataVariasi)
     const expRegresi = ExpRegresi(data.dataRegresi);
-    console.log(expRegresi.b)
     const viscosity = Viscosity(expRegresi.b,dataVariasi.m,dataVariasi.r,);
     const angularFrequency = AngularFrequency(dataVariasi.k, dataVariasi.m, expRegresi.b);
     const plot = plotEquation(data.dataAmplitudo[0], expRegresi.b,angularFrequency,dataVariasi.t)

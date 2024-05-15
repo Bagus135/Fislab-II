@@ -38,7 +38,6 @@ function C_hitung(meanAngle){
 
 function RegresiSudut(dataRegresi){
     const Regresi = linearRegression(dataRegresi)
-    console.log(Regresi)
     const x = []; const y = [];
     let xPoint = 0;
     for(let i = 0; i< 2; i++){

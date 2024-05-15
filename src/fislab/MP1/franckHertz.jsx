@@ -13,7 +13,6 @@ function GroupingEnergy(data){
                 E.push(data[`${j}`][i])
             }
         }
-        console.log(E)   
     Energy.push(E)    
     }
     return Energy

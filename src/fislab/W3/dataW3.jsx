@@ -13,5 +13,4 @@ const DataW3 = {
 // data pengolahan 
 const DataOlahW3 = ExecutionW3(DataW3) 
 
-console.log(DataOlahW3)
 export {DataW3, DataOlahW3}

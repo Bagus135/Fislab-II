@@ -1,5 +1,5 @@
 import GrafikW3 from "./grafikW3";
-import RotasiSpesifikScript from "./rotasiSpesifikMP3";
+import RotasiSpesifikScript from "./rotasiSpesifikW3";
 import { TabelPengukuran, TabelPerbandinganC } from "./tabelW3";
 
 function W3(){

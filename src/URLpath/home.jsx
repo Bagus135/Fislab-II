@@ -32,6 +32,8 @@ function HandleButton(){
         state8 : false,
         state9 : false,
         state10 : false,
+        state11 : false,
+        state12 : false,
     });
  return {Output, stateButton}
 }
@@ -51,6 +53,9 @@ function Contents(){
         MP3 : null, 
         MP4 : null,
         MP5 : null,
+        UAP1 : null,
+        UAP2 : null,
+
     });
 
     const Button = ({handleButton, Title}) => {
@@ -290,6 +295,50 @@ function Contents(){
             </div>
         )
     }
+    function UAPSnell(){
+        function handleButtonSnell(){
+            stateBtn.state11 = !stateBtn.state11;
+            if(stateBtn.state11 === true){
+              setMenu({
+                ...Menu,
+                UAP1 : <OutputState linkData={'UAP-Snellius'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP5'}/>
+              })
+            } else {
+                setMenu({
+                  ...Menu,
+                  UAP1 : null
+                })
+            }
+        }
+        return(
+            <div>
+                {<Button handleButton={handleButtonSnell} Title={"UAP 1"}/>}
+                {Menu.UAP1}
+            </div>
+        )
+    }
+    function UAPMilikan(){
+        function handleButtonMilikan(){
+            stateBtn.state12 = !stateBtn.state12;
+            if(stateBtn.state12 === true){
+              setMenu({
+                ...Menu,
+                UAP2 : <OutputState linkData={'UAP-Milikan'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP5'}/>
+              })
+            } else {
+                setMenu({
+                  ...Menu,
+                  UAP2 : null
+                })
+            }
+        }
+        return(
+            <div>
+                {<Button handleButton={handleButtonMilikan} Title={"UAP 2"}/>}
+                {Menu.UAP2}
+            </div>
+        )
+    }
  
     return (
         <div>
@@ -322,6 +371,12 @@ function Contents(){
             </div>
             <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
             <ModernPhysics5/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
+            <UAPSnell/>
+            </div>
+            <div className="bg-gray-600 rounded-md p-1 mx-10 mt-3 ">
+            <UAPMilikan/>
             </div>
         </div>
     )

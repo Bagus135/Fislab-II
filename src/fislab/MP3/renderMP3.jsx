@@ -6,7 +6,10 @@ function MP3(){
         <div>
         <TabelPengukuran/>
         <TabelPerhitungan/>
+        <div className="h-full w-1/2">
+
         <GrafikLED/>
+        </div>
         </div>
     )
 }

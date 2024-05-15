@@ -7,7 +7,6 @@
      g : 9.8,  
     };
     
-    console.log(variable)
 
 
  function FloatingEquation(Voltage, fallVelocity){
@@ -37,7 +36,6 @@ function FloatingMethod(Data){
        oilCharge.push(Charge);
        pengulangan.push(i+1);
     }
-    console.log(typeof Charge)
     return {oilCharge, pengulangan};
  }
 
