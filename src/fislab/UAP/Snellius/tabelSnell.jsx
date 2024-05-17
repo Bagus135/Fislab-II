@@ -70,4 +70,14 @@ function TabelLarutanGula4(){
   )
 }
 
-export{TabelAir, TabelKaca,TabelLarutanGula1, TabelLarutanGula2,TabelLarutanGula3, TabelLarutanGula4}
+function TabelMinyak(){
+  return (
+    <>
+      <Tabel layout={Layout('Data Indeks Bias Minyak Goreng ke 1',300)} header={['Orde', decodeURI('%CE%B8') + '1  (' +decodeURI('%C2%B0') + ')', decodeURI('%CE%B8') + '2  (' + decodeURI('%C2%B0') +')', 'n_kaca' ]} data={[DataIndeksBias.minyak.pengulangan1.pengulangan, DataSnellius.minyak.pengulangan1.theta1, DataSnellius.minyak.pengulangan1.theta2, DataIndeksBias.minyak.pengulangan1.n2]}/>
+
+      <Tabel layout={Layout('Data Indeks Bias Minyak Goreng  ke 2',300)} header={['Orde', decodeURI('%CE%B8') + '1  (' +decodeURI('%C2%B0') + ')', decodeURI('%CE%B8') + '2  (' + decodeURI('%C2%B0') +')', 'n_kaca' ]} data={[DataIndeksBias.minyak.pengulangan2.pengulangan, DataSnellius.minyak.pengulangan2.theta1, DataSnellius.minyak.pengulangan2.theta2, DataIndeksBias.minyak.pengulangan2.n2]}/>   
+    </>
+  )
+}
+
+export{TabelAir, TabelKaca,TabelLarutanGula1, TabelLarutanGula2,TabelLarutanGula3, TabelLarutanGula4, TabelMinyak}

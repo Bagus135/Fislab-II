@@ -64,5 +64,14 @@ function GrafikGula4(){
     const PlotGrafik = <PlotGraph title='Grafik Hukum Snellius Pada Medium Udara-Larutan Gula dengan Konsentrasi 1,08gr/ml' titleX={`Sin${decodeURI('%CE%B8')}1`} titleY={`Sin${decodeURI('%CE%B8')}2`} datasets={[grafikData, grafikRegresi, ErrorBar]}/>
     return  PlotGrafik
   }
+function GrafikMinyak(){
+    const grafikData = datasets('Data Pengukuran','scatter',Data['x'],Data['minyak']['mean'],'blue','blue')
+    const grafikRegresi = datasets(`Regresi Linear [ y = ${(Data['minyak']['Regresi'].m).toFixed(7)}x ${(Data['minyak']['Regresi'].b).toFixed(5)}]`,'line',Data['minyak']['PlotRegresi']['x'], Data['minyak']['PlotRegresi']['y'],'red','red')
+    const ErrorBar = errorBar('y','Error Bar', Data['x'],Data['minyak']['mean'],Data['minyak']['std'])
+
+
+    const PlotGrafik = <PlotGraph title='Grafik Hukum Snellius Pada Medium Minyak Goreng' titleX={`Sin${decodeURI('%CE%B8')}1`} titleY={`Sin${decodeURI('%CE%B8')}2`} datasets={[grafikData, grafikRegresi, ErrorBar]}/>
+    return  PlotGrafik
+  }
   
-  export {GrafikAir,GrafikGula1, GrafikGula2, GrafikGula3, GrafikGula4, GrafikKaca}
+  export {GrafikAir,GrafikGula1, GrafikGula2, GrafikGula3, GrafikGula4, GrafikKaca, GrafikMinyak}

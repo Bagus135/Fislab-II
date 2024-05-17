@@ -60,6 +60,16 @@ const DataSnellius = {
             theta1 : [5,10,15,20,25,30,35,40,45,50],
             theta2 : [3.5,6,11,14,17.5,23,25,30,32,35],
         },
+    },
+    minyak : {
+        pengulangan1 : {
+            theta1 : [5,10,15,20,25,30,35,40,45,50],
+            theta2 : [3, 7, 12, 15, 17, 24, 25, 29, 35, 36],
+        },
+        pengulangan2 : {
+            theta1 : [5,10,15,20,25,30,35,40,45,50],
+            theta2 : [3, 7, 13, 16, 17, 23, 25, 30, 33, 35],
+        },
     }
 }
 
@@ -88,6 +98,10 @@ const DataIndeksBias = {
     larutanGula4 : {
         pengulangan1 : RefractionIndex(DataSnellius.larutanGula4.pengulangan1.theta1, DataSnellius.larutanGula4.pengulangan1.theta2),
         pengulangan2 : RefractionIndex(DataSnellius.larutanGula4.pengulangan2.theta1, DataSnellius.larutanGula4.pengulangan2.theta2),
+    },
+    minyak : {
+        pengulangan1 : RefractionIndex(DataSnellius.minyak.pengulangan1.theta1, DataSnellius.minyak.pengulangan1.theta2),
+        pengulangan2 : RefractionIndex(DataSnellius.minyak.pengulangan2.theta1, DataSnellius.minyak.pengulangan2.theta2),
     },
 }
 
