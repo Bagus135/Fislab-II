@@ -22,7 +22,7 @@ function TabelPengukuran(){
     }
     function TabelX(){
         return (
-          <Tabel layout={Layout('Data Pengukuran Jarak Antar Orde Terang',300)} header={['Variasi','x (m)']} data={[['Merah', 'Kuning', 'Hijau', 'Biru'],[dataMerah.x, dataKuning.x, dataHijau.x, dataBiru.x]]} />
+          <Tabel layout={Layout('Data Pengukuran Jarak Antar Orde Terang',200)} header={['Variasi','x (m)']} data={[['Merah', 'Kuning', 'Hijau', 'Biru'],[dataMerah.x, dataKuning.x, dataHijau.x, dataBiru.x]]} />
        )
     }
     function TabelStopVolt(){
@@ -46,7 +46,7 @@ function TabelPengukuran(){
 function TabelPerhitungan(){
     
         return (
-            <Tabel layout={Layout('Data Perhitungan',300)} header={['Variasi',`${decodeURI('%CE%BB')} (nm)`,'Frekuensi(THz)', 'EK (Joule)' ]} data={[['Merah', 'Kuning', 'Hijau', 'Biru'],
+            <Tabel layout={Layout('Data Perhitungan',200)} header={['Variasi',`${decodeURI('%CE%BB')} (nm)`,'Frekuensi(THz)', 'EK (Joule)' ]} data={[['Merah', 'Kuning', 'Hijau', 'Biru'],
             
             [(dataLambda.Merah*10**9).toFixed(5),(dataLambda.Kuning*10**9).toFixed(5),(dataLambda.Hijau*10**9).toFixed(5),(dataLambda.Biru*10**9).toFixed(5)],
             
