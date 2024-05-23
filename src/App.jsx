@@ -12,6 +12,7 @@ import MP1 from './fislab/MP1/renderMP1';
 import MP3 from './fislab/MP3/renderMP3';
 import W1 from './fislab/W1/renderW1';
 import Snell from './fislab/UAP/Snellius/renderSnell';
+import Milikan from './fislab/UAP/Milikan/renderMilikan';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <Route path='/modern-physics-3' element={<MP3/>}/>
         <Route path='/modern-physics-5' element={<MP5/>}/>
         <Route path='/UAP-Snellius' element={<Snell/>}/>
-        <Route path='/UAP-Milikan' element={<MP1/>}/>
+        <Route path='/UAP-Milikan' element={<Milikan/>}/>
         <Route path='*' element={<NoRoutes/>}/>
       </Routes>
       </BrowserRouter>
