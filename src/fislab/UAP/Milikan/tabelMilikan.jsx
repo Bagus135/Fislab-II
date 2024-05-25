@@ -45,7 +45,7 @@ function TabelPerhitunganQ(){
 
 function TabelHisto(){
     return (
-          <Tabel layout={Layout('Data Informasi Histogram',150)} header={['Variabel', 'Floating Methods', 'Fall-Raise Methods' ]} data={[['Data Terkecil', 'Data Terbesar', 'Banyak Data'], [`${InfoHisto.floating.min} .10^-19`, `${InfoHisto.floating.max} .10^-19`, InfoHisto.floating.length], [`${InfoHisto.fallRaise.min} .10^-19`, `${InfoHisto.fallRaise.max} .10^-19`, InfoHisto.fallRaise.length]]} />
+          <Tabel layout={Layout('Data Informasi Histogram',150)} header={['Variabel', 'Floating Methods', 'Fall-Raise Methods' ]} data={[['Data Terkecil', 'Data Terbesar', 'Banyak Data', 'Mean Modus'], [`${InfoHisto.floating.min} .10^-19`, `${InfoHisto.floating.max} .10^-19`, InfoHisto.floating.length,`${InfoHisto.floating.mean} .10^-19`], [`${InfoHisto.fallRaise.min} .10^-19`, `${InfoHisto.fallRaise.max} .10^-19`, InfoHisto.fallRaise.length, `${InfoHisto.fallRaise.mean} .10^-19`]]} />
        )
 }
 
