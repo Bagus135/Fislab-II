@@ -301,7 +301,7 @@ function Contents(){
             if(stateBtn.state11 === true){
               setMenu({
                 ...Menu,
-                UAP1 : <OutputState linkData={'UAP-Snellius'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP5'}/>
+                UAP1 : <OutputState linkData={'UAP-Snellius'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/UAP/Snellius'}/>
               })
             } else {
                 setMenu({
@@ -323,7 +323,7 @@ function Contents(){
             if(stateBtn.state12 === true){
               setMenu({
                 ...Menu,
-                UAP2 : <OutputState linkData={'UAP-Milikan'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP5'}/>
+                UAP2 : <OutputState linkData={'UAP-Milikan'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/UAP/Milikan'}/>
               })
             } else {
                 setMenu({
