@@ -8,6 +8,8 @@ export function Histogram({data, layouts, color}){
             color},
         xbins : {
             size: 1,
+            end : 50,
+            start :0,
         }
     }];
     return(<Plot data={Data} layout={layouts}/>)
