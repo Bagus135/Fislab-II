@@ -13,8 +13,19 @@ function Layout(title, height, width){
        title,
        bargap:0.05,
        xaxis : {
-        ticktext : [1,2,3,4,5,6,7]
-       }
+        title :{
+          text : `Muatan (10^-19 C)`,
+          size : 18,
+          color : '#7f7f7f',
+        },
+       },
+       yaxis : {
+        title :{
+          text : `Frekuensi`,
+          size : 18,
+          color : '#7f7f7f',
+        },
+       },
      }
      return layout
    } 

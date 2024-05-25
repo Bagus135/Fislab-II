@@ -1,5 +1,5 @@
 import HistogramMiikan from "./histogramMilikan"
-import { TabelPengukuran, TabelPerhitunganQ, } from "./tabelMilikan"
+import {TabelHisto, TabelPengukuran, TabelPerhitunganQ, } from "./tabelMilikan"
 
 function Milikan(){
     return(
@@ -7,15 +7,14 @@ function Milikan(){
         <h1 className="font-bold text-3xl text-center"> KUANTISASI ELEKTRON DAN ENERGI ORBITAL</h1>
         <h1 className="font-serif text-l text-center"> Gunakan Situs Dekstop Untuk Pengalaman yang lebih Baik</h1>
         <br/> <br/>
-            <TabelPengukuran/>
-            <br/>
-            <br/>
-            <TabelPerhitunganQ/>
-            <br/>
-            <br/>
-            <HistogramMiikan/>
-            <br/>
-            <br/>
+        <TabelPengukuran/>
+        <br/>  <br/>
+       <TabelPerhitunganQ/>
+        <br/>  <br/>
+        <TabelHisto/>
+        <br/>  <br/>
+        <HistogramMiikan/>
+        <br />  <br/>
         </div>
     )
 }

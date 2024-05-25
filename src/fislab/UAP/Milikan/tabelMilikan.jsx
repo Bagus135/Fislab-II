@@ -1,6 +1,7 @@
 import { Tabel } from "../../../component/table";
 import {qMinyak, DataMentah} from "./dataMilikan";
 import {stanDevMilikan } from "./deviasiMilikan";
+import { InfoHisto } from "./selisihMilikan";
 
 
 function Layout(title, height){
@@ -10,16 +11,16 @@ function Layout(title, height){
         b:0,
         t:35
        },
+       title,
        height,
        
-       title
      }
      return layout
    } 
    
    function TabelPengukuran(){
     const Milikan = <Tabel 
-    layout={Layout('Data Pengukuran Milikan',2000)} 
+    layout={Layout('Data Pengukuran Milikan',1600)} 
     header={['Pengulangan', 'Voltage Float (V)','Voltage Raise (V)', 'Time Raise (s)', 'Time Fall (s)']} 
     data={[[...qMinyak.dataFloating.pengulangan, "Standart Deviasi"], 
           [...DataMentah.VoltageFloat, stanDevMilikan.VoltageFloat],
@@ -36,11 +37,17 @@ function Layout(title, height){
    }
    
 
-   function TabelPerhitunganQ(){
+function TabelPerhitunganQ(){
     return (
-          <Tabel layout={Layout('Data Perhitungan',2000)} header={['Pengulangan', 'q-Floating (10^-19 C)', 'q-FallRaise (10^-19 C)l' ]} data={[qMinyak.dataFloating.pengulangan,qMinyak.dataFloating.oilCharge, qMinyak.dataFallRaise]} />
+          <Tabel layout={Layout('Data Perhitungan',1600)} header={['Pengulangan', 'q-Floating (10^-19 C)', 'q-FallRaise (10^-19 C)l' ]} data={[qMinyak.dataFloating.pengulangan,qMinyak.dataFloating.oilCharge, qMinyak.dataFallRaise]} />
+       )
+}
+
+function TabelHisto(){
+    return (
+          <Tabel layout={Layout('Data Informasi Histogram',150)} header={['Variabel', 'Floating Methods', 'Fall-Raise Methods' ]} data={[['Data Terkecil', 'Data Terbesar', 'Banyak Data'], [`${InfoHisto.floating.min} .10^-19`, `${InfoHisto.floating.max} .10^-19`, InfoHisto.floating.length], [`${InfoHisto.fallRaise.min} .10^-19`, `${InfoHisto.fallRaise.max} .10^-19`, InfoHisto.fallRaise.length]]} />
        )
 }
 
 
-export {TabelPengukuran, TabelPerhitunganQ,}
+export {TabelPengukuran, TabelPerhitunganQ, TabelHisto,}

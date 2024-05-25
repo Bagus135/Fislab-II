@@ -1,4 +1,5 @@
 import { qMinyak } from "./dataMilikan"; 
+import { max,min,} from "simple-statistics";
 
 function selisih(data){
     const dataHisto = [];
@@ -14,6 +15,22 @@ const DataSelisih = {
     floating : selisih(qMinyak.dataFloating.oilCharge),
     fallRaise : selisih(qMinyak.dataFallRaise)
 
+  }
+
+
+
+const InfoHisto = {
+  floating : {
+    'max' : max(DataSelisih.floating),
+    'min' : min(DataSelisih.floating),
+    'length' : DataSelisih.floating.length,
+  },
+  fallRaise : {
+    'max' : max(DataSelisih.fallRaise),
+    'min' : min(DataSelisih.fallRaise),
+    'length' : DataSelisih.fallRaise.length,
+  },
 }
 
-export{DataSelisih}
+
+export{DataSelisih, InfoHisto}
