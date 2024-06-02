@@ -256,7 +256,7 @@ function Contents(){
             if(stateBtn.state9 === true){
               setMenu({
                 ...Menu,
-                MP4 : <OutputState linkData={'modern-physics-4'} linkSC={'https://github.com/Bagus135/fislab-II/tree/main/src/fislab/MP4'}/>
+                MP4 : <OutputState linkData={'modern-physics-4'} linkSC={'https://colab.research.google.com/drive/1TafsIQAouUz-znuHSluhOGfXgeQbhg7h?hl=id-id#scrollTo=gOuMOoIGgR5g'}/>
               })
             } else {
                 setMenu({
