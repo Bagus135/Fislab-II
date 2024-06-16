@@ -7,8 +7,8 @@ export function Histogram({data, layouts, color}){
         marker :{
             color},
         xbins : {
-            size: 1,
-            end : 50,
+            size: 1.6,
+            end : 30,
             start :0,
         }
     }];
